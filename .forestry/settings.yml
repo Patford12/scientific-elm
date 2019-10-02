@@ -5,6 +5,11 @@ admin_path: admin
 webhook_url: https://api.stackbit.com/project/5d8e44791ac63e0010c5c21d/webhook/forestry
 sections:
 - type: document
+  path: _data/author.json
+  label: Author
+  templates:
+  - author
+- type: document
   path: _config.yml
   label: Global Site Config
   templates:
@@ -14,11 +19,6 @@ sections:
   label: Social Links
   templates:
   - social
-- type: document
-  path: _data/author.json
-  label: Author
-  templates:
-  - author
 - type: document
   path: index.md
   label: Home
